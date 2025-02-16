@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
-import 'package:to_do_app/cubits/cubit/all_tasks_cubit.dart';
+import 'package:to_do_app/cubits/all_task_cubit/all_tasks_cubit.dart';
 import 'package:to_do_app/views/widgets/custom_app_bar.dart';
 import 'package:to_do_app/views/widgets/task_list_view.dart';
 

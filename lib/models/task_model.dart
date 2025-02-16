@@ -35,7 +35,7 @@ class TaskModel extends HiveObject {
   String subTitle;
 
   @HiveField(2)
-  bool checkMark; // تأكد من أنه دائمًا نوعه bool
+  bool checkMark; 
 
   TaskModel({
     required this.title,
@@ -43,9 +43,6 @@ class TaskModel extends HiveObject {
     this.checkMark = false,
   });
 
-  void toggleCheck() {
-    checkMark = !checkMark;
-    save(); // حفظ التغيير في Hive
-  }
+  
 }
 

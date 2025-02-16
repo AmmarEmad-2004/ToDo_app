@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:to_do_app/cubits/cubit/all_tasks_cubit.dart';
+import 'package:to_do_app/cubits/all_task_cubit/all_tasks_cubit.dart';
 import 'package:to_do_app/models/task_model.dart';
 import 'package:to_do_app/views/widgets/task_item.dart';
 

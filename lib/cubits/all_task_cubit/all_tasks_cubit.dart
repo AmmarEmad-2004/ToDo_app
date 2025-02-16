@@ -14,7 +14,7 @@ class AllTasksCubit extends Cubit<AllTasksState> {
     try {
       var tasksBox = Hive.box<TaskModel>(kBoxName);
       tasks = tasksBox.values.toList();
-      emit(AllTasksSuccess());
+      emit(AllTasksSuccess(tasks: tasks));
     } catch (e) {
       emit(AllTasksFailuer(errMassage: e.toString()));
     }

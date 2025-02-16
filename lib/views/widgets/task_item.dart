@@ -77,8 +77,9 @@ class _TaskItemState extends State<TaskItem> {
                         // activeColor: Color.fromARGB(255, 137, 58, 58),
                         value: widget.taskModel.checkMark,
                         onChanged: (newValue) {
-                          widget.taskModel
-                              .toggleCheck(); // يقلب قيمة `checkMark` ويحفظها
+                          widget.taskModel.checkMark =
+                              newValue ?? widget.taskModel.checkMark;
+                          setState(() {});
                         },
                       ),
                     ],
